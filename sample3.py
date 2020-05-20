@@ -4,5 +4,5 @@ stream = open('sample.xml','r')
 
 xml = xmltodict.parse(stream.read())
 
-for e in xml['people']['Person']:
-    print(e[1])
+for e in xml['people']:
+    print(e["Person"]["LastName"])

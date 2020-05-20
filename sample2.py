@@ -11,4 +11,3 @@ for e in root:
     print("")
 
     print(e.get("Id"))
-    
