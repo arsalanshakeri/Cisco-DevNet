@@ -7,8 +7,13 @@ xml=ET.parse(stream)
 root=xml.getroot()
 
 for e in root:
-    print(ET.tostring((e)))
+    for p in e:
+        print(ET.tostring(p))
+
     print("")
+#    print(ET.tostring((e)))
+#
+# 
+#     print("")
 
     print(e.get("Id"))
-    
